@@ -2,7 +2,7 @@ import React from "react";
 
 export async function getServerSideProps() {
   // This runs on the server at request time (SSR)
-  const res = await fetch("http://localhost:4000/api/message");
+  const res = await fetch("https://backendapi1125-cjfjbrdbe4exaaec.eastasia-01.azurewebsites.net/api/message");
   const data = await res.json();
 
   return {
